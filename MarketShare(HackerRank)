@@ -1,0 +1,38 @@
+import java.util.*;
+public class MaketShare{
+
+     public static void main(String []args){
+       List<String> customers=new ArrayList<String>();
+       customers.add("Ram");
+       customers.add("Mohan");
+       customers.add("Ram");
+       customers.add("Ram");
+       customers.add("Mohan");
+       customers.add("Ram");
+       customers.add("Aman");
+       customers.add("Ram");
+       customers.add("Mohan");
+       customers.add("Ram");
+       for(int i=0;i<customers.size();i++)
+           System.out.print(customers.get(i)+" ");
+         System.out.println();
+        List<String> list=marketshare(customers);
+        for(int i=0;i<list.size();i++)
+           System.out.print(list.get(i)+" ");
+     }
+    static List<String> marketshare( List<String> customers)
+    { int n=customers.size();
+    List<String> list= new ArrayList<>();
+      Set<String> person=new HashSet<>(customers);
+        for(String s:person)
+        {    int m=Collections.frequency(customers,s);
+           int percent=m*10;
+           if(percent>=50)
+           {
+              list.add(s);
+           }
+        }
+      Collections.sort(list);
+      return list;
+    }
+}
