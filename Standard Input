@@ -1,0 +1,18 @@
+import java.util.*;
+import java.io.*;
+public class MyClass {
+    public static void main(String args[]) throws Exception {
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+      int n=Integer.parseInt(br.readLine());
+      int[] arr=new int[n];
+      String[] values=br.readLine().split(" ");
+      for(int i=0;i<n;i++){
+          arr[i]=Integer.parseInt(values[i]);
+          System.out.print(arr[i]+" ");
+      }
+    }
+}
+
+//INPUT STREAM
+//4
+//18 20 40 69
