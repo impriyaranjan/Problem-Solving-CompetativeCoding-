@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+public class Main {
+    //cutting sticks with birbal: codechef
+    public static void main(String args[]) {
+     Integer[] arr={5,3,5,3,1};
+     Set<Integer> set = new HashSet<Integer>(Arrays.asList(arr));
+     
+     System.out.println("No of steps to cut the sticks:" + set.size());
+    }
+}
+
+/*  Integer[] arr = { 0, 1, 2, 3, 4, 5 };
+
+    Set<Integer> set = new HashSet<Integer>();
+    Collections.addAll(set,arr);
+    
+    Set<Integer> set = Sets.newHashSet(arr);
+    
+    Set<Integer> set = new HashSet<>(6);
+    CollectionUtils.addAll(set,arr);
+*/
+    
+    
